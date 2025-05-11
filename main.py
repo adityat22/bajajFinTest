@@ -39,6 +39,7 @@ def main():
         question_link = "https://drive.google.com/file/d/1q8F8g0EpyNzd5BWk-voe5CKbsxoskJWY/view?usp=sharing"
 
     print(f"\nYou are assigned: {question}")
+    print("📄 Question Link:", question_link)
 
     final_sql_query = """SELECT
     E1.EMP_ID,
@@ -81,5 +82,5 @@ ORDER BY
         print("Submission failed:")
         print(test_response.status_code, test_response.text)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
